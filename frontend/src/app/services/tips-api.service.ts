@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { ITip } from '../components/tip/tip.component';
 import { environment } from '../../environments/environment';
 
-const BASE_URL = environment.apiUrl;
+const apiUrl = environment.apiUrl;
 
 @Injectable({
   providedIn: 'root',
@@ -13,12 +13,12 @@ export class TipsApiService {
   constructor(private http: HttpClient) {}
 
   async getTips() {
-    return await lastValueFrom(this.http.get<ITip[]>(`${BASE_URL}/tips`));
+    return await lastValueFrom(this.http.get<ITip[]>(`${apiUrl}/tips`));
   }
 
   async createTip(totalPrice: number, percent: number) {
     return await lastValueFrom(
-      this.http.post<ITip>(`${BASE_URL}/tips`, {
+      this.http.post<ITip>(`${apiUrl}/tips`, {
         totalPrice,
         percent,
       })
@@ -26,6 +26,6 @@ export class TipsApiService {
   }
 
   async deleteTip(id: number) {
-    return await lastValueFrom(this.http.delete(`${BASE_URL}/tips/${id}`));
+    return await lastValueFrom(this.http.delete(`${apiUrl}/tips/${id}`));
   }
 }

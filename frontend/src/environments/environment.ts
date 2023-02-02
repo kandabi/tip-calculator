@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://tip-calculator-db.onrender.com/',
+  apiUrl: 'https://tip-calculator-db.onrender.com',
 };

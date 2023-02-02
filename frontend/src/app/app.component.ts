@@ -9,6 +9,7 @@ import { TipsApiService } from './services/tips-api.service';
 })
 export class AppComponent {
   title = 'Tip Calculator';
+  path: string = '../assets/github.png';
   tips: ITip[] = [];
 
   constructor(private tipsApi: TipsApiService) {}

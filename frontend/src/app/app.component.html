@@ -1,6 +1,11 @@
 <div class="container">
-  <h1>{{title}}</h1>
-  <div class="center-container"> 
+  <div class="flex-between">
+    <h1>{{title}}</h1>
+    <a href="https://github.com/kandabi/tip-calculator" target="_blank">
+      <img class="github" src="{{path}}"/>Github
+    </a>
+  </div>
+  <div class="flex-between"> 
     <app-tip-editor [onTipCreate]="handleTipCreate"/>
     <app-tip-list [tips]="tips" [onTipDelete]="handleTipDelete" />
   </div>

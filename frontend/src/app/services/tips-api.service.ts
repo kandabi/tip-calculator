@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { lastValueFrom } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { ITip } from '../components/tip/tip.component';
+import { environment } from '../../environments/environment';
 
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = environment.apiUrl;
 
 @Injectable({
   providedIn: 'root',

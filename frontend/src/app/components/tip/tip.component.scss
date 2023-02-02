@@ -1,0 +1,19 @@
+.tip-container {
+  position: relative;
+  margin: 4px 0px;
+  width: 100%;
+
+  .tip {
+    display: inline-block;
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  .exit-btn {
+    position: absolute;
+    cursor: pointer;
+    padding: 8px;
+    color: red;
+    right: 0;
+  }
+}

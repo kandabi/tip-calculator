@@ -1,0 +1,8 @@
+<div 
+  (mouseenter)="onMouseChange(true)"
+  (mouseleave)="onMouseChange(false)"
+  class="tip-container"
+>
+  <span class="tip">{{displayText}}</span>
+  <span *ngIf="isHovering" (click)="onClick()" class="exit-btn">X</span>
+</div>

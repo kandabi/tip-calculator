@@ -1,0 +1,5 @@
+<div class="tip-items-container">
+  <span class="all-tips">All Tips</span>
+  <app-tip *ngFor="let tip of tips; let index = index" [tip]="tip" [index]="index" [onTipDelete]="onTipDelete"/>
+</div>
+

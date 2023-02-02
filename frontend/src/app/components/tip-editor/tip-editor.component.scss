@@ -1,0 +1,33 @@
+.tip-editor {
+  flex-direction: column;
+  display: flex;
+  width: 300px;
+  gap: 8px;
+
+  .add-tip {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  input[type="number"] {
+    padding: 8px 14px;
+  }
+
+  button {
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .percent-container {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+
+    input[type="range"] {
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+}

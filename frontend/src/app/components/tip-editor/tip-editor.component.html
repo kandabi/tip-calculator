@@ -1,0 +1,15 @@
+<div class="tip-editor">
+  <span class="add-tip">Add Tip</span>
+
+  <label for="totalPrice">Total Price</label>
+  <input id="totalPrice" [value]="totalPrice" type="number" min="0" (keyup)="onAmountChange($event)">
+  
+  <label for="percent">Tip Percentage</label>
+  <div class="percent-container">
+    <input id="percent" [value]="percent" type="range" min="1" max="30" step="0.1" (change)="onPercentChange($event)">
+    <span>{{percent}}%</span>
+  </div>
+
+  <span>Tip Amount: {{totalPrice * percent * 0.01}}</span>
+  <button (click)="onCreateTipClick()">Create Tip 🤑</button>
+</div>

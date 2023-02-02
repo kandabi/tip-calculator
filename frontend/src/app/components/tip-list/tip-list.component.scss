@@ -1,0 +1,14 @@
+.tip-items-container {
+  flex-direction: column;
+  padding: 10px 15px;
+  display: flex;
+  width: 320px;
+  gap: 6px;
+
+  .all-tips {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
+    padding: 10px 6px;
+    font-size: 18px;
+  }
+}
